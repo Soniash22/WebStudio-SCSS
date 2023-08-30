@@ -1,0 +1,74 @@
+.smlinks {
+    > a {
+      margin-right: 10px;
+    }
+  
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .lilinks {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  
+    > li > {
+      a {
+        margin-right: 15px;
+        width: 44px;
+        height: 44px;
+        background-color: #FFFFFF;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #2196F3;
+          fill: #FFFFFF;
+  
+          path {
+            background-color: #2196F3;
+            fill: #FFFFFF;
+          }
+        }
+      }
+  
+      svg {
+        margin-left: 15px;
+      }
+    }
+  }
+  
+  .lilinks2 > li > a {
+    &:hover {
+      background-color: #2196F3;
+      fill: #FFFFFF;
+  
+      path {
+        background-color: #2196F3;
+        fill: #FFFFFF;
+      }
+    }
+  
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff24;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  
+    path {
+      fill: #ffffff;
+    }
+  }
+  
+  .last {
+    margin-right: 0;
+  }
+  

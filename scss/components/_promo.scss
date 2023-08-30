@@ -1,0 +1,112 @@
+.promo1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.75rem;
+    line-height: 60px;
+  
+    /* or 136% */
+  
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  .promo {
+    background-image: url(/./WEBSTUDIO/Img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fadeInUp 2s 1s;
+    margin-top: 75px;
+  }
+  
+  .overlay {
+    background: rgba(47, 48, 58, 0.4);
+    width: 100%;
+    height: 100%;
+    padding: 200px 0;
+  }
+  
+  .btn {
+    margin: 0 auto;
+    height: 50px;
+    width: 216px;
+    left: 692px;
+    top: 430px;
+    border: none;
+    border-radius: 4px;
+    background-color: dodgerblue;
+    color: azure;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+  
+    /* identical to box height, or 188% */
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    animation: pulse 2s 3s infinite;
+  
+    &:hover {
+      transform: scale3d(1.1, 1.1, 5);
+      transition-property: backround-color;
+      background-color: #41a2f1;
+      transition: 0.5s;
+    }
+  }
+  
+  .overlay1 {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  
+  .promo_modal {
+    top: 50%;
+    left: 50%;
+    width: 544px;
+    height: 581px;
+    padding-bottom: 40px;
+    transform: translate(-50%, -50%);
+    padding-top: 8px;
+    position: relative;
+    z-index: 100;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+  
+  .show {
+    display: block;
+    z-index: 5;
+  }
+  
+  .close_modal {
+    fill: #fff;
+    background-color: #fff;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: rgba(0, 0, 0, 0.1) 1px solid;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  

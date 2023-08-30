@@ -1,0 +1,48 @@
+.clientssvg {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+  }
+  
+  .client {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  
+  .clients {
+    margin-top: 95px;
+    margin-bottom: 95px;
+  }
+  
+  .clientssvg > li {
+    &:hover {
+      border: 1px solid #2196F3;
+      fill: #2196F3;
+  
+      path {
+        border: 1px solid #2196F3;
+        fill: #2196F3;
+      }
+    }
+  
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+  
+    > a {
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  

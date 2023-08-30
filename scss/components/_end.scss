@@ -1,0 +1,60 @@
+.end {
+    background-color: #2f303a;
+    padding: 60px 0;
+  
+    .container {
+      display: flex;
+      gap: 70px;
+    }
+  }
+  
+  .footer1 {
+    color: #ffffff;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 31px;
+  
+    /* identical to box height */
+  
+    letter-spacing: 0.03em;
+  
+    span {
+      color: #2196f3;
+    }
+  }
+  
+  .addressa {
+    a {
+      color: #FFFFFF99;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.875em;
+      line-height: 24px;
+  
+      /* or 171% */
+  
+      letter-spacing: 0.03em;
+  
+      &:hover {
+        color: #2196f3;
+      }
+    }
+  
+    span {
+      color: #ffffff;
+  
+      &:hover {
+        color: #2196f3;
+      }
+    }
+  
+    a {
+      margin-top: 10px;
+      display: flex;
+      align-content: normal;
+    }
+  }
+  
