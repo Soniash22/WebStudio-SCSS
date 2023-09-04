@@ -24,12 +24,12 @@
   
   .clientssvg > li {
     &:hover {
-      border: 1px solid #2196F3;
-      fill: #2196F3;
+      border: 1px solid $main_color;
+      fill: $main_color;
   
       path {
-        border: 1px solid #2196F3;
-        fill: #2196F3;
+        border: 1px solid $main_color;
+        fill: $main_color;
       }
     }
   

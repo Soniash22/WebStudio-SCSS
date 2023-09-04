@@ -24,7 +24,7 @@
     letter-spacing: 0.03em;
   
     span {
-      color: #2196f3;
+      color: $main_color;
     }
   }
   
@@ -39,7 +39,7 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: $text;
   }
   
   i {
@@ -47,15 +47,15 @@
   }
   
   .links a:hover {
-    color: #2196f3;
+    color: $main_color;
   }
   
   .contacts a {
     &:hover {
-      color: #2196f3;
+      color: $main_color;
     }
   
-    color: #757575;
+    color: $text;
   }
   
   header {
@@ -81,23 +81,23 @@
   }
   
   .email:hover {
-    color: #2196F3;
-    fill: #2196F3;
+    color: $main_color;
+    fill: $main_color;
   
     path {
-      color: #2196F3;
-      fill: #2196F3;
+      color: $main_color;
+      fill:  $main_color;
     }
   }
   
   .tel {
     &:hover {
-      color: #2196F3;
-      fill: #2196F3;
+      color: $main_color;
+      fill: $main_color;
   
       path {
-        color: #2196F3;
-        fill: #2196F3;
+        color: $main_color;
+        fill: $main_color;
       }
     }
   
@@ -118,7 +118,7 @@
       width: 48px;
       height: 4px;
       border-radius: 2px;
-      background: #2196F3;
+      background: $main_color;
       position: absolute;
       bottom: -28px;
       opacity: 0;

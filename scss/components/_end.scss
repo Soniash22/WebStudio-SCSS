@@ -21,7 +21,7 @@
     letter-spacing: 0.03em;
   
     span {
-      color: #2196f3;
+      color: $main_color;
     }
   }
   
@@ -39,7 +39,7 @@
       letter-spacing: 0.03em;
   
       &:hover {
-        color: #2196f3;
+        color: $main_color;
       }
     }
   
@@ -47,7 +47,7 @@
       color: #ffffff;
   
       &:hover {
-        color: #2196f3;
+        color: $main_color;
       }
     }
   

@@ -27,11 +27,11 @@
         cursor: pointer;
   
         &:hover {
-          background-color: #2196F3;
+          background-color: $main_color;
           fill: #FFFFFF;
   
           path {
-            background-color: #2196F3;
+            background-color: $main_color;
             fill: #FFFFFF;
           }
         }
@@ -45,11 +45,11 @@
   
   .lilinks2 > li > a {
     &:hover {
-      background-color: #2196F3;
+      background-color: $main_color;
       fill: #FFFFFF;
   
       path {
-        background-color: #2196F3;
+        background-color: $main_color;
         fill: #FFFFFF;
       }
     }

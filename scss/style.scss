@@ -1,3 +1,4 @@
+@import "./color";
 @import "./components/header";
 @import "./components/about";
 @import "./components/clients";
@@ -9,6 +10,7 @@
 @import "./components/end";
 @import "./components/join";
 @import "./portfolio/portfolio";
+
 
 html {
     scroll-behavior: smooth;

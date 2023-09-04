@@ -4,7 +4,7 @@
     animation: fadeinUp 2s;
   }
   
-  .main {
+  .us_main {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
@@ -17,7 +17,7 @@
     margin: 0 auto;
   }
   
-  .members {
+  .us_members {
     list-style-type: none;
     margin: 0;
     display: flex;
@@ -49,7 +49,7 @@
   
       text-align: center;
       letter-spacing: 0.03em;
-      color: #757575;
+      color: $text;
     }
   }
   
