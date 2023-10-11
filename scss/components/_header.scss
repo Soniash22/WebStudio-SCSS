@@ -10,18 +10,26 @@
     justify-content: space-between;
     align-items: center;
   }
-  
+  .header__hamburder {
+    display: none;
+
+  }
   .logo {
     color: black;
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 26px;
     line-height: 31px;
   
     /* identical to box height */
   
     letter-spacing: 0.03em;
+
+    @media (min-width:768px) {
+      font-size: 24px;
+    }
+
   
     span {
       color: $main_color;
@@ -40,6 +48,13 @@
     line-height: 16px;
     letter-spacing: 0.02em;
     color: $text;
+
+    @media (min-width:768px) {
+      
+      flex-wrap: wrap;
+      gap: 10px;
+      width: 138px;
+    }
   }
   
   i {
@@ -78,6 +93,13 @@
   
   .tel {
     margin-right: 0;
+  }
+  .email {
+    @media (min-width:768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
   }
   
   .email:hover {
@@ -142,4 +164,8 @@
       width: 70px;
     }
   }
-  
+  .contacts a {
+    @media (min-width:768px) {
+    font-size: 12px;
+    }
+  }

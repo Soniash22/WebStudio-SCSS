@@ -2,31 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
-.container {
-  width: 1140px;
-  margin: 0 auto;
-}
+
 
 a {
   text-decoration: none;
 }
 
-.logo {
-  color: black;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-
-  /* identical to box height */
-
-  letter-spacing: 0.03em;
-
-  span {
-    color: $main_color;
-  }
-}
 
 .links {
   display: flex;
@@ -68,68 +49,9 @@ a {
   display: flex;
 }
 
-.contacts {
-  a {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: $text;
 
-    &:hover {
-      color: $main_color;
-    }
-  }
 
-  width: 330px;
-  display: flex;
-  justify-content: space-between;
-}
 
-.tel {
-  > a {
-    color: $text;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    margin-right: 5px;
-
-    &:hover {
-      color: $main_color;
-    }
-  }
-
-  &:hover {
-    color: $main_color;
-    fill: $main_color;
-
-    path {
-      color: $main_color;
-      fill: $main_color;
-    }
-  }
-}
-
-.email {
-  &:hover {
-    color: $main_color;
-    fill: $main_color;
-
-    path {
-      color: $main_color;
-      fill: $main_color;
-    }
-  }
-
-  > a {
-    margin-right: 5px;
-  }
-}
 
 .filters_btns {
   list-style-type: none;
