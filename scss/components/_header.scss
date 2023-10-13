@@ -1,20 +1,28 @@
-.header_block {
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #FFF;
+  z-index: 1;
+  margin: auto;
+
+  &__block {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  .header-left {
+  &__left {
     display: flex;
     width: 520px;
     justify-content: space-between;
     align-items: center;
   }
-  .header__hamburder {
+  &__hamburder {
     display: none;
 
   }
-  .logo {
+  &__logo {
     color: black;
     font-family: "Raleway";
     font-style: normal;
@@ -31,12 +39,10 @@
     }
 
   
-    span {
-      color: $main_color;
-    }
+    
   }
   
-  .contacts {
+  &__contacts {
     display: flex;
     width: 330px;
     justify-content: space-between;
@@ -47,37 +53,17 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: $text;
+    
 
     @media (min-width:768px) {
-      
+      font-size: 12px;
       flex-wrap: wrap;
       gap: 10px;
       width: 138px;
     }
   }
-  
-  i {
-    margin-right: 5px;
-  }
-  
-  .links a:hover {
-    color: $main_color;
-  }
-  
-  .contacts a {
-    &:hover {
-      color: $main_color;
-    }
-  
-    color: $text;
-  }
-  
-  header {
-    margin: auto;
-  }
-  
-  .links {
+
+  &__links {
     display: flex;
     justify-content: space-between;
     width: 280px;
@@ -90,16 +76,37 @@
     letter-spacing: 0.02em;
     position: relative;
   }
+}
+  
+ 
+  
+  .header__links a:hover {
+    color: $main_color;
+  }
+  
+  .header__contacts a {
+    color: $text;
+    &:hover {
+      color: $main_color;
+    }
+  
+    color: $text;
+  }
+  
+
+  
+  .header__logo span {
+    color: $main_color;
+  }
   
   .tel {
     margin-right: 0;
   }
   .email {
-    @media (min-width:768px) {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-    }
+    
   }
   
   .email:hover {
@@ -126,13 +133,7 @@
 
   }
   
-  header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background: #FFF;
-    z-index: 1;
-  }
+
   
   .links-a {
     &::before {
