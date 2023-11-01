@@ -1,38 +1,52 @@
 html {
   scroll-behavior: smooth;
 }
+// img {
+//   width: 100%;
+// }
 
+.header1 {
+  @media (min-width:320px) {
+    padding: 16px 0;
+    height: 60px;
+  }
 
+  @media (min-width:768px) {
+    padding: 26px 0;
+    height: 80px;
+  }
+
+}
 
 a {
   text-decoration: none;
 }
 
 
-.links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 280px;
-  list-style-type: none;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  margin-top: 20px;
-  color: #212121;
-  position: relative;
+// .links {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   width: 280px;
+//   list-style-type: none;
+//   font-family: "Roboto";
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 16px;
+//   letter-spacing: 0.02em;
+//   margin-top: 20px;
+//   color: #212121;
+//   position: relative;
 
-  a {
-    color: #212121;
+//   a {
+//     color: #212121;
 
-    &:hover {
-      color: $main_color;
-    }
-  }
-}
+//     &:hover {
+//       color: $main_color;
+//     }
+//   }
+// }
 
 .header_block {
   display: flex;
@@ -58,7 +72,14 @@ a {
   display: flex;
   justify-content: center;
   margin-bottom: 45px;
-  margin-top: 94px;
+  margin-top: 60px;
+
+  @media(min-width:320px) and (max-width:480px) {
+    width: 326px;
+    flex-wrap: wrap;
+    justify-content: left;
+
+  }
 
   > li > button {
     font-family: "Roboto";
@@ -99,17 +120,41 @@ a {
 .our_projects {
   list-style-type: none;
   flex-wrap: wrap;
+    justify-content: space-between;
   display: flex;
-  justify-content: space-between;
-  width: 1170px;
   margin: 0 auto;
-  margin-bottom: 90px;
+  
+
+  @media(min-width:320px) {
+    margin-bottom: 60px;
+  }
+  @media(min-width:768px) {
+    justify-content: space-around;
+  }
+  @media(min-width:1024px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 90px;
+    }
 
   > li {
     box-sizing: border-box;
     background: #ffffff;
     border: 1px solid #eeeeee;
     margin-bottom: 30px;
+
+    @media(min-width:320px) and (max-width:480px) {
+      width: 450px;
+    }
+
+    @media(min-width:768px) {
+      width: 354px;
+
+    }
+    @media(min-width:1024px) {
+      width: 370px;
+
+    }
 
     &:hover {
       transform: scale3d(1.02, 1.02, 5);
@@ -150,10 +195,7 @@ p {
 }
 
 .end {
-  .container {
-    display: flex;
-    gap: 70px;
-  }
+
 
   background-color: #2f303a;
   padding: 60px 0;
@@ -209,16 +251,7 @@ p {
   }
 }
 
-.joinclass {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
+
 
 .join {
   margin-top: 15px;
@@ -229,6 +262,12 @@ p {
   display: flex;
   gap: 10px;
   padding: 0;
+  margin: 0;
+
+  @media(max-width:320px) {
+    flex-wrap: wrap;
+    align-items: center;
+  }
 
   > li > a {
     &:hover {
@@ -266,6 +305,7 @@ i {
 
 hr {
   border: 0.5px solid #ececec;
+  margin-top: 22px;
 }
 
 /* .projects_img::before {
@@ -299,6 +339,7 @@ hr {
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
+    
 
     /* 155.556% */
     letter-spacing: 0.54px;
@@ -306,6 +347,8 @@ hr {
     justify-content: center;
     align-items: center;
     transition: 0.3s;
+
+    
   }
 
   &:hover:before {
@@ -317,17 +360,35 @@ hr {
   width: 322px;
   position: absolute;
   top: 50px;
-  width: 322px;
+  
   opacity: 0;
+
+
 
   p {
     color: #fff;
     font-family: Roboto;
-    font-size: 18px;
+    
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0.54px;
+
+    @media(min-width:320px) {
+      font-size: 16px;
+    }
+    @media(min-width:480px) {
+      font-size: 18px;
+    }
+    
+  }
+  
+  
+
+}
+.projects_img {
+  @media(min-width:480px) and (max-width:768px) {
+    width: 100%;
   }
 }
 
@@ -356,7 +417,8 @@ hr {
   }
 }
 
-.links li {
+
+.header__links li {
   &:nth-child(2) .links-a::before {
     width: 76px;
   }
@@ -384,7 +446,7 @@ hr {
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   outline: none;
-  width: 358px;
+  
   height: 50px;
   padding-left: 15px;
 }
@@ -413,9 +475,7 @@ hr {
   align-items: center;
 }
 
-.form_end {
-  margin-left: 72px;
-}
+
 
 .follow::after {
   content: url(../../icon\ send.svg);
@@ -424,9 +484,7 @@ hr {
   right: 27px;
 }
 
-.follow_btn {
-  display: flex;
-}
+
 
 .join {
   margin-top: 15px;

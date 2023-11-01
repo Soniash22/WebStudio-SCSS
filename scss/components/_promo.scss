@@ -1,32 +1,50 @@
 .promo {
-  background-image: url(../Img.png);
+ 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   animation: fadeInUp 2s 1s;
-  margin-top: 75px;
+   
 
+@media (min-width:320px) {
+    margin-top: 60px;
+    background-image: url(../Header2img.png);
+  }
 @media (min-width:768px) {
-  width: 768px;
-  height: 400px;
+  background-image: url(../Img.png);
+  
+  margin-top: 80px;
 }
+
+
   &__title {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
+    
   
     /* or 136% */
   
     text-align: center;
-    letter-spacing: 0.06em;
+    
     text-transform: uppercase;
     color: #ffffff;
 
-    @media (min-width:768px) {
+    @media(min-width:320px) {
+      font-size: 22px;
+      line-height: 35px;
+      letter-spacing: 1.56px;
+    }
+    @media(min-width:480px) {
       font-size: 26px;
-      padding-top: 100px;
+      line-height: 42px;
+      
+    }
+    
+    @media (min-width:1200px) {
+      letter-spacing: 2.64px;
+      font-size: 44px;
+      line-height: 60px;
     }
 
   }
@@ -64,6 +82,13 @@
       background-color: #41a2f1;
       transition: 0.5s;
     }
+    @media(min-width: 320px) {
+      width: 200px;
+
+    }
+    @media(min-width: 1200px) {
+      width: 216px;
+    }
   }
 }
 
@@ -75,9 +100,14 @@
     height: 100%;
     padding: 200px 0;
 
-    @media (min-width:768px) {
-      padding: 0;
+    @media(min-width:320px) {
+      padding:118px 0 ;
     }
+    @media(min-width:1200px) {
+      padding: 200px 0;
+      
+    }
+    
   }
   
   

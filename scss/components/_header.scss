@@ -6,6 +6,16 @@
   z-index: 1;
   margin: auto;
 
+  @media (min-width:320px) {
+    padding: 16px 0;
+    height: 60px;
+  }
+
+  @media (min-width:768px) {
+    padding: 26px 0;
+    height: 80px;
+  }
+
   &__block {
     display: flex;
     justify-content: space-between;
@@ -14,12 +24,31 @@
   
   &__left {
     display: flex;
-    width: 520px;
+    
     justify-content: space-between;
     align-items: center;
+
+    @media(min-width: 768px) {
+      gap: 87px;
+    }
+    @media(min-width: 1200px) {
+      gap: 92px;
+    }
+    
   }
   &__hamburder {
     display: none;
+
+    @media (max-width:480px){
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      span{
+        width: 24px;
+        display: block;
+        border: 2px solid #212121;
+      }
+    }
 
   }
   &__logo {
@@ -29,14 +58,22 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
+    margin: 0;
   
     /* identical to box height */
   
     letter-spacing: 0.03em;
-
-    @media (min-width:768px) {
+    @media (min-width:480px) {
       font-size: 24px;
+      line-height: normal;
+
     }
+
+    @media (min-width:1200px) {
+      font-size: 26px;
+    }
+
+    
 
   
     
@@ -44,22 +81,28 @@
   
   &__contacts {
     display: flex;
-    width: 330px;
-    justify-content: space-between;
+    
+    
     align-items: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+
     letter-spacing: 0.02em;
     
-
+    @media (max-width:480px) {
+      display: none;
+    }
     @media (min-width:768px) {
       font-size: 12px;
       flex-wrap: wrap;
       gap: 10px;
       width: 138px;
+    }
+    @media(min-width: 1200px) {
+      width: 330px;
+      gap: 30px;
     }
   }
 
@@ -75,6 +118,12 @@
     line-height: 16px;
     letter-spacing: 0.02em;
     position: relative;
+
+    margin: 0;
+
+    @media (max-width:480px) {
+      display: none;
+    }
   }
 }
   
@@ -105,7 +154,7 @@
   .email {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      
     
   }
   

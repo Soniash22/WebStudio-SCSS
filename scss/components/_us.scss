@@ -1,28 +1,42 @@
 .us {
     background: #f5f5f5;
     margin-top: 85px;
+    padding: 0 0 90px;
     animation: fadeinUp 2s;
+  @media(min-width:480px) and (max-width:768px) {
+    padding-bottom: 60px;
   }
   
-  .us_main {
+    &__main {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    font-size: 2.25rem;
+    font-size: 36px;
     line-height: 42px;
     text-align: center;
-    letter-spacing: 0.03em;
+    letter-spacing: 1.08px;
     padding-top: 85px;
     padding-bottom: 40px;
     margin: 0 auto;
+    @media(min-width:320px) and (max-width:768px) {
+      padding-bottom: 30px;
+    }
+    @media (min-width:768px) {
+      font-size: 28px;
+      letter-spacing: 0.84px;
+      padding-top: 60px;
+    }
+
+    
   }
   
-  .us_members {
+  &__members {
     list-style-type: none;
     margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-left: 0;
+    gap: 30px;
   
     h3 {
       font-family: 'Roboto';
@@ -50,35 +64,69 @@
       text-align: center;
       letter-spacing: 0.03em;
       color: $text;
+
     }
+    @media (min-width:320px) and (max-width: 768px) {
+      
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+   
+  
   }
   
-  .frame {
+  &__frame {
     background: #FFFFFF;
   
     /* material shadow v1 */
   
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin-left: 20px;
-    margin-bottom: 90px;
+  
     transition: all;
     padding-bottom: 30px;
+    
   
     &:hover {
       transform: translate3d(1px, 5px, 20px);
       transition: 0.5s;
     }
+    @media (min-width:320px) {
+      width: 100%;
+    }
+    @media (min-width:480px) {
+     
+     width: 450px;
   }
-  
-  .img1 {
+  @media (min-width:768px) {
+    width: 354px;
+  }
+  @media (min-width:1024px) {
     width: 270px;
+  }
+}
+  &__img1 {
+    width: 100%;
     height: 260px;
     object-fit: cover;
-    object-fit: cover;
+    @media (min-width:480px) {
+      
+      height: 460px;
+    }
+    @media (min-width:768px) {
+      
+height: 374px;
+    }
+    @media (min-width:1200px) {
+      height: 260px;
+
+    }
+   
   }
+    
   
-  .namee {
+  
+  &__namee {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
@@ -90,9 +138,10 @@
     letter-spacing: 0.03em;
     margin-bottom: 0;
     margin-bottom: 10px;
+    margin-left: 0;
   }
   
-  .grey {
+  &__grey {
     color: #757575;
     font-family: "Roboto";
     font-style: normal;
@@ -104,5 +153,6 @@
   
     letter-spacing: 0.03em;
     margin-top: 0;
+    margin-left: 0;
   }
-  
+}

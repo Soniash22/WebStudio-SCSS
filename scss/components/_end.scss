@@ -4,8 +4,42 @@
   
     .container {
       display: flex;
-      gap: 70px;
+      align-items: center;
+
+      @media(min-width:320px) and (max-width:480px) {
+        align-items: end;
+      }
+
+    @media (max-width:768px) {
+      align-items: center;
+    flex-direction: column;
+    gap: 60px;
     }
+
+    
+    }
+    &__address {
+      @media (min-width:320px) and (max-width: 768px) {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+      }
+    }
+    &__links {
+      display: flex;
+    gap: 70px;
+
+    @media(max-width:480px) {
+      flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    }
+    @media (max-width:320px) {
+      gap: 40px;
+    }
+    
+    }
+    
   }
   
   .footer1 {
@@ -13,12 +47,14 @@
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 26px;
     line-height: 31px;
-  
-    /* identical to box height */
-  
-    letter-spacing: 0.03em;
+    letter-spacing: 0.78px;
+
+    @media (min-width:320px) and (max-width: 768px) {
+      font-size: 24px;
+      letter-spacing: 0.72px;
+    }
   
     span {
       color: $main_color;
@@ -55,6 +91,12 @@
       margin-top: 10px;
       display: flex;
       align-content: normal;
+    }
+    
+    @media(min-width: 320px) and (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
     }
   }
   

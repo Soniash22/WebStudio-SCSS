@@ -1,11 +1,27 @@
-.clientssvg {
+.clients {
+  margin-top: 95px;
+  margin-bottom: 95px;
+
+  @media (min-width:320px) and (max-width: 768px) {
+    margin-top: 60px;
+
+  }
+
+  &__list {
     list-style-type: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+    @media (min-width:320px) and (max-width: 768px) {
+      margin-top: 30px;
+
+    }
   }
   
-  .client {
+  &__title {
     display: flex;
     justify-content: center;
     font-family: 'Roboto';
@@ -14,15 +30,17 @@
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    letter-spacing: 0.03em;
+    letter-spacing: 1.08px;
+
+    @media (min-width:320px) and (max-width: 768px) {
+      font-size: 28px;
+      letter-spacing: 0.84px;
+    }
   }
   
-  .clients {
-    margin-top: 95px;
-    margin-bottom: 95px;
-  }
   
-  .clientssvg > li {
+  
+  &__item {
     &:hover {
       border: 1px solid $main_color;
       fill: $main_color;
@@ -31,6 +49,16 @@
         border: 1px solid $main_color;
         fill: $main_color;
       }
+      
+    }
+    @media (min-width:320px) and (max-width: 480px) {
+      width: 210px;
+    }
+    @media(min-width: 768px) {
+      width: 226px;
+    }
+    @media(min-width:1024px) {
+      width: 170px;
     }
   
     border: 1px solid #AFB1B8;
@@ -45,4 +73,5 @@
       justify-content: center;
     }
   }
+}
   
