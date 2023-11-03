@@ -79,11 +79,14 @@
   
   .form_end {
     margin-left: 72px;
-    @media(min-width: 320px) and (max-width:768px) {
+    @media(min-width: 320px) and (max-width:1024px) {
       display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
+    }
+    @media(min-width: 1024px) {
+      margin-left: 80px;
     }
   }
   
@@ -98,7 +101,7 @@
     display: flex;
     
     
-    @media (min-width:320px) and (max-width: 768px) {
+    @media (min-width:320px) and (max-width:1024px) {
       gap: 20px;
       flex-direction: column;
       align-items: center;
