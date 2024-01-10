@@ -1,17 +1,5 @@
-@import "./color";
-@import "./utils/general";
-@import "./components/header";
-@import "./components/about";
-@import "./components/clients";
-@import "./components/form";
-@import "./components/promo";
-@import "./components/work";
-@import "./components/us";
-@import "./components/smlinks";
-@import "./components/end";
-@import "./components/join";
-@import "./portfolio/portfolio";
-@import "./components/menu";
+@import "./color","./utils/general", "./components/header", "./components/about", "./components/clients", "./components/form", "./components/promo", "./components/work", "./components/us", "./components/smlinks", "./components/end", "./components/join",
+ "./portfolio/portfolio", "./components/menu";
 
 
 html {
@@ -19,9 +7,9 @@ html {
   }
   
   
-  h3 {
-    margin-top: 30px;
-  }
+  // h3 {
+  //   margin-top: 30px;
+  // }
   a {
     text-decoration: none;
     color: black;

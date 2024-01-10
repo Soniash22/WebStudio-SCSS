@@ -45,13 +45,15 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
     background: rgba(47, 48, 58, 0.8);
-    bottom: 0;
     margin-left: 0;
     width: 100%;
+    bottom: 0;
   }
   
   .work-text1 {
     padding: 27px 82px;
+    bottom: 0;
+    position: absolute;
   }
   
   .work-text {
@@ -61,4 +63,6 @@
   .work-text3 {
     padding: 27px 70px;
   }
+
+
   
